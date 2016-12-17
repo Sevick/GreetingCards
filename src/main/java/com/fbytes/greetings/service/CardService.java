@@ -18,7 +18,7 @@ public class CardService {
 
     static CardService instance;
 
-    List<Card> cards =new ArrayList<>();
+    private List<Card> cards =new ArrayList<>();
 
     private CardService(){
     }

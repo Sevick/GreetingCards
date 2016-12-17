@@ -15,14 +15,14 @@ import com.google.gson.annotations.Expose;
 public class Card {
 
     @Expose
-    Integer cardTemplateId;
+    private Integer cardTemplateId;
     @Expose
-    Map<String, String> fieldsValues=new HashMap<String, String>();       // fieldName-fieldValue
+    private Map<String, String> fieldsValues=new HashMap<String, String>();       // fieldName-fieldValue
 
-    String recipient;
-    LocalDateTime createDt;
-    CardStatus status;
-    LocalDateTime lastStatusChange;
+    private String recipient;
+    private LocalDateTime createDt;
+    private CardStatus status;
+    private LocalDateTime lastStatusChange;
 
     public Card(Integer cardTemplateId, String recipient){
         createDt=LocalDateTime.now();

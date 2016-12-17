@@ -5,8 +5,8 @@ package com.fbytes.greetings.ui;
  */
 public class ConcreteCommand extends CommandExecutor {
 
-    RunWithHelp crux;
-    String commandName;
+    private RunWithHelp crux;
+    private String commandName;
 
     public ConcreteCommand(String commandName, RunWithHelp crux){
         this.crux=crux;

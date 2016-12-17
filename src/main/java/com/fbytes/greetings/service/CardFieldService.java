@@ -12,7 +12,7 @@ import com.fbytes.greetings.model.CardField;
 public class CardFieldService {
     static CardFieldService instance;
 
-    Map<String, CardField> fields;
+    private Map<String, CardField> fields;
 
     private CardFieldService() {
 

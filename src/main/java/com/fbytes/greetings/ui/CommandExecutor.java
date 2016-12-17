@@ -5,7 +5,7 @@ package com.fbytes.greetings.ui;
  */
 public class CommandExecutor {
 
-    CommandExecutor next;
+    protected CommandExecutor next;
 
     public void execute(String command){
         if (next!=null)

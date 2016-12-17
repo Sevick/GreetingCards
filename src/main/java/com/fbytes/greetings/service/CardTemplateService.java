@@ -8,10 +8,10 @@ import java.util.*;
 import com.fbytes.greetings.model.CardTemplate;
 
 public class CardTemplateService {
-    static CardTemplateService instance;
-    Integer lastCardTemplateId = 0;
-    Map<Integer, CardTemplate> templates = new HashMap<>();
-    CardFieldService cardFieldService = CardFieldService.getInstance();
+    static private CardTemplateService instance;
+    private Integer lastCardTemplateId = 0;
+    private Map<Integer, CardTemplate> templates = new HashMap<>();
+    private CardFieldService cardFieldService = CardFieldService.getInstance();
 
     private CardTemplateService() {
 

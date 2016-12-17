@@ -11,7 +11,7 @@ abstract public class CardField {
         }
     }
 
-    String name;
+    private String name;
 
     public CardField(String name){ this.name = name; };
     abstract public void validate(String value) throws ValidationException;        // check if value is valid, if its not - throw exception
